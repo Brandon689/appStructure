@@ -12,6 +12,8 @@ import (
 
 func main() {
 
+	//util.GetJsonExternalAPIExample()
+
 	ctx := context.Background()
 
 	db2, err := db.NewDatabase()
