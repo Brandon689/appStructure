@@ -12,8 +12,9 @@ func main() {
 
 	e.Static("/", "assets")
 
-	aboutHandler := handlers.AboutHandler{}
-	e.GET("/about", aboutHandler.HandleAboutShow)
+	aboutHandler := &handlers.AboutHandler{}
+	homeHandler := &handlers.HomeHandler{}
+	handlers.SetupRoutes(e, homeHandler, aboutHandler)
 
 	e.Use(middleware.Logger())
 

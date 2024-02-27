@@ -7,7 +7,7 @@ import (
 
 type AboutHandler struct{}
 
-func (h AboutHandler) HandleAboutShow(c echo.Context) error {
+func (h AboutHandler) HandleAbout(c echo.Context) error {
 
 	return render(c, pages.About())
 }
