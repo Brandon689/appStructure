@@ -1,0 +1,5 @@
+.idea/
+./views/components/Button_templ.go
+./views/layout/base_templ.go
+./views/pages/home_templ.go
+./views/pages/about_templ.go
